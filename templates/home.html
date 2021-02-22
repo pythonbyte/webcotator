@@ -9,26 +9,26 @@
     <div class="container my-5">
       <table class="table text-center">
         <thead>
-            <tr>
-              <th>Empresas</th>
-              <th>Dolar</th>
-              <th>Euro</th>
-              <th>Libra</th>
-              <th>Dolar AUS</th>
-              <th>Dolar CAD</th>
-              <th>Dolar NZ</th>
-            </tr>
-          </thead>
+          <tr>
+            <th>Empresas</th>
+            <th>Dolar</th>
+            <th>Euro</th>
+            <th>Libra</th>
+            <th>Dolar AUS</th>
+            <th>Dolar CAD</th>
+            <th>Dolar NZ</th>
+          </tr>
+        </thead>
         <tbody>
           {% for quotation in data %}
             <tr>
-                <td> {{ quotation[0].replace('_', ' ')|title }} </td>
-                <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar) }}</td>
-                <td>R$ {{ '{0:0.2f}'.format(quotation[1].euro) }}</td>
-                <td>R$ {{ '{0:0.2f}'.format(quotation[1].libra) }}</td>
-                <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar_au) }}</td>
-                <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar_cad) }}</td>
-                <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar_nz) }}</td>
+              <td> {{ quotation[0].replace('_', ' ')|title }} </td>
+              <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar) }}</td>
+              <td>R$ {{ '{0:0.2f}'.format(quotation[1].euro) }}</td>
+              <td>R$ {{ '{0:0.2f}'.format(quotation[1].libra) }}</td>
+              <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar_au) }}</td>
+              <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar_cad) }}</td>
+              <td>R$ {{ '{0:0.2f}'.format(quotation[1].dolar_nz) }}</td>
             </tr>
           {% endfor %}
         </tbody>

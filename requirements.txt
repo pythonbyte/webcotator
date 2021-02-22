@@ -1,0 +1,14 @@
+certifi
+chardet
+click
+fastapi
+h11
+idna
+Jinja2
+lxml
+MarkupSafe
+pydantic
+requests
+starlette
+urllib3
+uvicorn
